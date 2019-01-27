@@ -3,7 +3,7 @@
 #define SIZE1 10
 #define SIZE2 100
 
-char *mystrncpy(char *target,const char *source, int);
+char *mystrncpy(char *target, const char *source, int);
 
 int main(void)
 {
@@ -22,7 +22,7 @@ int main(void)
 	return 0;
 }
 
-char *mystrncpy(char *target,const char *source, int n)
+char *mystrncpy(char *target, const char *source, int n)
 {
 	char *ret = target;
 	while (*source && n > 0) {

@@ -3,22 +3,22 @@
 #include <string.h>
 #define LEN 90 // Note: this line was missing in my book
 
-int main(int argc, char *argv[])
+int main()
 {
 	FILE *in, *out;
 	int ch;
 	char name[LEN];
 	int count = 0;
-	if (argc < 2) {
-		fprintf(stderr, "Usage: %s filename\n", argv[0]);
-		exit(EXIT_FAILURE);
-	}
-	if ((in = fopen(argv[1], "r")) == NULL) {
+
+	printf("Enter filename to reduce: ");
+	fgets(name, LEN, stdin);
+	if (name[strlen(name)-1] == '\n')
+		name[strlen(name)-1] = '\0';
+	if ((in = fopen(name, "r")) == NULL) {
 		fprintf(stderr, "I couldn't open the file \"%s\"\n",
-		argv[1]);
+		name);
 		exit(EXIT_FAILURE);
 	}
-	strncpy(name,argv[1], LEN - 5);
 	name[LEN - 5] = '\0';
 	strcat(name,".red");
 	if ((out = fopen(name, "w")) == NULL) {

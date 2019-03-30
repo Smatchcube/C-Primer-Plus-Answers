@@ -37,6 +37,8 @@ int main(int argc, char * argv[])
 			fp2_ended = readline(fp2);
 	}
 
+	fclose(fp1);
+	fclose(fp2);
 	puts("Done");
 	return 0;
 }

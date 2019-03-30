@@ -41,7 +41,9 @@ int main(int argc, char * argv[])
 			putchar('\n');
 		}
 	}
-
+	
+	fclose(fp1);
+	fclose(fp2);
 	puts("Done");
 	return 0;
 }

@@ -1,4 +1,5 @@
-// compile with 2a.c
+// filename: 2b.c
+// must be compiled with 2a.c
 #include <stdio.h>
 #include "2a.h"
 

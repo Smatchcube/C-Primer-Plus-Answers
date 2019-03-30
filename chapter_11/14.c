@@ -1,3 +1,4 @@
+// use the -lm argument for compilation to tell gcc to link the math library
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

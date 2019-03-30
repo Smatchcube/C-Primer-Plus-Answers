@@ -1,4 +1,5 @@
-// compile with 2b.c
+// filename: 2a.c
+// must be compiled with 2b.c
 #include <stdio.h>
 
 static int mode;

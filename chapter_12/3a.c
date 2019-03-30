@@ -1,4 +1,5 @@
-// compile with 3b.c
+// filename: 3a.c
+// must be compiled with 3b.c
 #include <stdio.h>
 
 void set_mode(int * old_mode, int new_mode);

@@ -1,4 +1,5 @@
-// compile with 3a.c
+// filename: 3b.c
+// must be compiled with 3a.c
 #include <stdio.h>
 #include "3a.h"
 

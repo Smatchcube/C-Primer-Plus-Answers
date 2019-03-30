@@ -1,3 +1,4 @@
+// Integer overflow for educational reasons, discard the warning of the compiler
 #include <stdio.h>
 #include <limits.h>
 #include <float.h>

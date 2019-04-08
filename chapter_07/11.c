@@ -44,7 +44,7 @@ int main(void)
 			printf("please enter a correct action\n");
 		}
 	}
-	
+
 	cost_artichokes_order = artichokes_pounds * ARTICHOKES_PRICE_PER_POUNDS;
 	cost_beets_order = beets_pounds * BEETS_PRICE_PER_POUNDS;
 	cost_carrots_order = carrots_pounds * CARROTS_PRICE_PER_POUNDS;
@@ -64,7 +64,7 @@ int main(void)
 		shipping_costs = 14.00 + 0.50 * (total_pounds - 20.00);
 
 	grand_total = cost_vegetables - discount + shipping_costs;
-	
+
 	if (total_pounds <= 0) {
 		printf("Bye\n");
 		return 0;
@@ -95,6 +95,3 @@ float ask_pounds(char product_name[])
 	scanf("%f", &pounds);
 	return pounds;
 }
-
-
-

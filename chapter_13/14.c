@@ -5,7 +5,6 @@
 #define COLS 30
 
 void deglitch(int [ROWS][COLS]);
-float my_abs(float);
 
 int main(int argc, char * argv[])
 {
